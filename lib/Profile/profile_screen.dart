@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:project_firebase/Profile/profile_controller.dart';
+import 'package:project_firebase_imprv/Profile/profile_controller.dart';
 import '../Service/Auth.dart';
-import 'editprofile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   final ProfileControllerFB controller = Get.find();
@@ -107,7 +106,6 @@ class ProfileScreen extends StatelessWidget {
               height: 50,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(() => EditProfilePage());
                 },
                 child: const Text(
                   'Edit Profil',
