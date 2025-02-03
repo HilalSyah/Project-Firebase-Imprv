@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:project_firebase_imprv/Add/AddScreen.dart';
-import 'package:project_firebase_imprv/Home/home_screen%20copy.dart';
 import 'package:project_firebase_imprv/Profile/profile_screen.dart';
+import '../Home/home_screen.dart';
 import 'BottomNavController.dart';
 
 class BottomNavScreen extends StatelessWidget {
