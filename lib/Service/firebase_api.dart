@@ -3,16 +3,16 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 
 class FirebaseApi {
-  final _firebaseMessaging = FirebaseMessaging.instance;
+  final firebaseMessaging = FirebaseMessaging.instance;
 
   FirebaseApi() {
     initNotifications();
   }
   Future<void> initNotifications() async {
-    await _firebaseMessaging.requestPermission();
+    await firebaseMessaging.requestPermission();
     await initLocalNotifications();
 
-    final fCMToken = await _firebaseMessaging.getToken();
+    final fCMToken = await firebaseMessaging.getToken();
     print('Token: $fCMToken');
 
     initPushNotifications();
