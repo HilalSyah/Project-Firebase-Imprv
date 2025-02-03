@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680093072583",
+    "project_id": "project-firebase-imprv",
+    "storage_bucket": "project-firebase-imprv.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680093072583:android:9155bd730f98bce1dd12e2",
+        "android_client_info": {
+          "package_name": "com.example.project_firebase_imprv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnw8Ujn7w8CKtlkz26qU6onrGivPo9xQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
