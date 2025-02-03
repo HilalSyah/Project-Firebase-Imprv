@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'AddController.dart';
 import 'components/CustomTextFieldAdd.dart';
+import 'components/CustomButtonAdd.dart'; // Import tombol reusable
 
 class AddScreen extends StatelessWidget {
   AddScreen({Key? key}) : super(key: key);
@@ -72,25 +73,14 @@ class AddScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Tombol untuk menambahkan task
+            // Tombol untuk menambahkan task (menggunakan CustomButtonAdd)
             Center(
-              child: ElevatedButton(
+              child: CustomButtonAdd(
                 onPressed: () {
-                  controller.addTask(); // Panggil addTask dari controller
-                  Get.back(); // Kembali ke layar sebelumnya
+                  controller.addTask();
+                  Get.back();
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent,
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 14.0, horizontal: 24.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-                child: const Text(
-                  'Add',
-                  style: TextStyle(color: Colors.white, fontSize: 16),
-                ),
+                text: 'Add',
               ),
             ),
           ],
