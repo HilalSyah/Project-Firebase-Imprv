@@ -100,29 +100,6 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 30),
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () {
-                },
-                child: const Text(
-                  'Edit Profil',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white, // Menambahkan warna teks putih
-                  ),
-                ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF42A5F5), // Warna tombol biru
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  elevation: 5, // Menambahkan efek bayangan
-                ),
-              ),
-            ),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
