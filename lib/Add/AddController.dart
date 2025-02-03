@@ -17,7 +17,6 @@ class AddController extends GetxController {
     final imageUrl = imageUrlController.text.isEmpty ? '' : imageUrlController.text;
     final price = double.tryParse(priceController.text) ?? 0.0;
 
-    // Menambahkan task ke Firestore
     tasksCollection.add({
       'title': title,
       'description': description,
@@ -25,7 +24,10 @@ class AddController extends GetxController {
       'price': price,
     }).then((value) {
       print("Task Added: ${value.id}");
-      clearFields(); // Setelah task berhasil ditambahkan, kita bersihkan field input
+      clearFields();
+
+      // Navigasi ke halaman lain setelah sukses
+      Get.offNamed('/home'); // Ganti dengan nama route tujuan
     }).catchError((error) {
       print("Failed to add task: $error");
     });
